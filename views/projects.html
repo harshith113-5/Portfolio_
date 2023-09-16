@@ -51,6 +51,10 @@
         {
             text-shadow: 2px 2px 5px bisque;
         }
+        .navbar1 .right ul
+        {
+            flex-wrap: wrap;
+        }
 
         @media screen and (max-width:616px) {
             .navbar1 .right{
@@ -114,34 +118,34 @@
             display: none;
         }
         @media screen and (max-width:974px) {
-            .fs #box
+            #fs #box
             {
                 background: white;
                 width: 0.2vw;
                 height: 70vh;
-                margin: 50px 10px;
+                margin: 50px 50px;
                 display: flex;
             }
-            .fs #box #vertical1
+            #fs #box #vertical1
             {
                 height: 0.2vh;
                 width: 56px;
                 background-color: white;
             }
-            .fs .box .vertical .image img
+            #fs #box #vertical1 img
             {
                 width: 44px;
                 position: relative;
                 top: -22px;
                 left: -48px;
             }
-            .fs .box .vertical #v-desc1
+            #fs #box #vertical1 #v-desc1
             {
                 position: relative;
                 left: 70px;
                 top: -58px;
             }
-            .fs .box .vertical #v-txt1
+            #fs #box #vertical1 #v-txt1
             {
                 position: relative;
                 left: 90px;
@@ -149,7 +153,7 @@
                 font-size: 12px;
                 width: 240px;
             }
-            .fs .box .vertical #v-txt1 button
+            #fs #box #vertical1 #v-txt1 button
             {
                 font-family: 'Poppins',sans-serif;
                 position: relative;
@@ -162,11 +166,11 @@
                 font-size: 16px;
                 width: 140px;
             }
-            .fs .box .vertical #v-txt1 button:hover
+            #fs #box #vertical1 #v-txt1 button:hover
             {
                 cursor: pointer;
             }
-            .fs #box #vertical2
+            #fs #box #vertical2
             {
                 height: 0.2vh;
                 width: 56px;
@@ -175,23 +179,20 @@
                 top: 258px;
                 left: -56px;
             }
-            .fs .box .vertical .image img
+            #fs #box #vertical2 .image img
             {
                 width: 44px;
                 position: relative;
-            }
-            .fs .box .vertical #img2 img
-            {
                 top: -22px;
                 left: -48px;
             }
-            .fs .box .vertical #v-desc2
+            #fs #box #vertical2 #v-desc2
             {
                 position: relative;
                 left: 70px;
                 top: -58px;
             }
-            .fs .box .vertical #v-txt2
+            #fs #box #vertical2 #v-txt2
             {
                 position: relative;
                 left: 90px;
@@ -199,7 +200,7 @@
                 font-size: 12px;
                 width: 240px;
             }
-            .fs .box .vertical #v-txt2 button
+            #fs #box #vertical2 #v-txt2 button
             {
                 font-family: 'Poppins',sans-serif;
                 position: relative;
@@ -212,12 +213,12 @@
                 font-size: 16px;
                 width: 140px;
             }
-            .fs .box .vertical #v-txt2 button:hover
+            #fs #box #vertical2 #v-txt2 button:hover
             {
                 cursor: pointer;
             }
         }
-        .fs
+        /* .fs
         {
             margin: auto;
             max-width: 80vw;
@@ -239,7 +240,6 @@
         .fs .box
         {
             background: white;
-            /* width: 50vw; */
             height: 2px;
             margin: 50px 0;
             display: flex;
@@ -286,7 +286,7 @@
         .fs .box .vertical .v-txt button:hover
         {
             cursor: pointer;
-        }
+        } */
     </style>
 </head>
 <body>
@@ -326,13 +326,13 @@
         </div>
     </header>
     <main>
-        <section class="fs">
+        <section class="fs" id="fs">
             <span id="element"></span><br>
             <!-- <h1>My Projects</h1> -->
             <span id="ele"></span>
             <div class="box" id="box">
                 <div class="vertical" id="vertical1">
-                    <div class="image" id="img1"><img src="../imgs/web-developer-illustration-1004x1024-wcqgbag3.png" alt=""></div>
+                    <div class="image"><img src="../imgs/web-developer-illustration-1004x1024-wcqgbag3.png" alt=""></div>
                     <div id="v-desc1" class="v-desc animate__animated animate__zoomIn">Harley-davidson</div>
                     <div id="v-txt1" class="v-txt animate__animated animate__zoomIn">Site of Harley-Davidson Motor Company. Check out current Harley motorcycles, locate a dealer, & browse motorcycle parts and apparel.
                         <button onclick="window.location.href='https://harley-davidson.onrender.com'">Visit now</button>
