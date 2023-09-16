@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(../HTML_Form/bg1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        /* @media screen and (min-width:800px){
+            body
+            {
+                background: url(../HTML_Form/bg1.jpg);
+            }
+        } */
+        .form
+        {
+            background-color: transparent;
+            border: 2px solid white;
+            width: 500px;
+            border-radius: 20px;
+            color: white;
+        }
+        form input
+        {
+            color: white;
+        }
+        form .input
+        {
+            background-color: transparent;
+            width: 200px;
+            height: 16px;
+            border-radius: 50px;
+            margin: 6px 0 6px 0;
+            border: 2px solid white;
+        }
+        form label
+        {
+            font-size: 22px;
+        }
+        form textarea
+        {
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+        }
+        form .btn
+        {
+            display: flex;
+            margin: 0 0 10px 0;
+        }
+        button
+        {
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 50px;
+            width: 320px;
+            height: 30px;
+            color: white;
+        }
+        form button:hover
+        {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h1>HTML Form</h1>
+        <form action="confirmation.html">
+            <label for="fname">Full Name:</label>
+            <input type="text" name="fname" required maxlength="20" minlength="1" class="input"><br>
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" required maxlength="20" minlength="1" class="input"><br>
+            <input type="radio" id="male" name="fav_language" value="HTML">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="fav_language" value="CSS">
+            <label for="female">Female</label><br>
+            <label for="country">Choose ur Country:</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="UK">UK</option>
+            </select><br>
+            <textarea placeholder="Comments" name="txtarea" id="txtarea" cols="40" rows="10" required maxlength="60" minlength="1"></textarea><br>
+            <div class="btn"><button>Submit</button></div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="../views/style.css"> -->
+    <title>Portfolio | About</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Carrois+Gothic+SC&family=Josefin+Sans&family=Noto+Sans:wght@400;700;800&family=Oswald:wght@400;500&family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Carrois+Gothic+SC&family=Josefin+Sans&family=Noto+Sans:wght@400;700;800&family=Oswald:wght@400;500&family=Poppins:wght@400;700&display=swap');
+        body
+        {
+            font-family: 'Poppins',sans-serif;
+            background-color: rgb(0,0,33);
+            color: white;
+            background-image: url(../imgs/bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar1
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:rgb(18,18,62);
+            border-radius: 5px;
+        }
+        .navbar1 ul
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar1 ul li
+        {
+            list-style: none;
+            display: inline-block;
+            margin: 0 18px;
+        }
+        .navbar1 li a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+        .navbar1 li a:hover
+        {
+            text-shadow: 2px 2px 5px bisque;
+        }
+        .navbar1 .right ul
+        {
+            flex-wrap: wrap;
+        }
+        .fs
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 680px;
+            /* justify-content: space-around; */
+            /* margin: 23px 0 0 0; */
+        }
+        .fs .rs
+        {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: start;
+            /* align-items: center; */
+            /* background-color: red; */
+            /* height: 1000px; */
+            width: 800px;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+        .rs p
+        {
+            font-weight: 400;
+            /* font-size: 1px; */
+            /* margin: 0 40px 0 80px; */
+            /* width: 200px; */
+        }
+        /* .rs img
+        {
+            width: 18vw;
+            height: 80vh;
+            border: 2px solid transparent;
+            border-radius: 40px;
+            background: 
+                linear-gradient(to right, white, white), 
+                linear-gradient(to right, rgb(247, 241, 75) , rgba(29, 29, 245, 0.753)); 
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+            box-shadow: 0 0 35px 4px #dddd759e;
+        } */
+        #element
+        {
+            /* color: blueviolet; */
+            font-size: 22px;
+            width: 50vw;
+        }
+        .con
+        {
+            display: flex;
+            flex-direction: column;
+            /* margin: 0 0 0 100px; */
+            background-color: rgb(18,18,62);
+            opacity: 0.7;
+            border-radius: 20px;
+            height: 55vh;
+            padding: 20px;
+        }
+        .con h1
+        {
+            font-weight: 700;
+            margin: 20px 40px;
+        }
+
+        @media screen and (max-width:616px) {
+            .navbar1 .right{
+                display: none;
+            }
+        }
+        @media screen and (max-width:616px) {
+            #mobnav 
+            {
+                /* display: block; */
+                display: inline-block;
+                overflow: hidden;
+                background-color: rgb(0,0,33);
+                position: relative;
+                width: 200px;
+            }
+
+            #mobnav #myLinks 
+            {
+                display: none;
+            }
+
+            #mobnav a 
+            {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            }
+
+            #mobnav a.icon 
+            {
+                background: black;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            #mobnav a:hover 
+            {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .active 
+            {
+                background-color: none;
+                color: white;
+            }
+            #btns
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            #element
+            {
+                /* color: blueviolet; */
+                font-size: 14px;
+                width: 86vw;
+            }
+            .fs
+            {
+                height: 280px;
+            }
+        }
+        .mobnav 
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar1 animate__animated animate__fadeIn">
+            <div class="left" style="font-weight: 700;">Harshith's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li class="item"><a href="/">Home</a></li>
+                    <li class="item"><a href="/about">About</a></li>
+                    <li class="item"><a href="/projects">Projects</a></li>
+                    <li class="item"><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobnav" id="mobnav">
+                <a href="/" class="active">Home</a>
+                <div id="myLinks">
+                  <a href="/about">About</a>
+                  <a href="/projects">Projects</a>
+                  <a href="/contact">Contact</a>
+                </div>
+                <a class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+    
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+            </script>
+        </div>
+        
+    </header>
+    <main>
+        <section class="fs">
+            <div class="rs">
+                <!-- <img src="../imgs/IMG_20230822_194337(2).jpg" alt="" id="img"> -->
+                <div class="con">
+                    <h1>About Me</h1>
+                    <span id="element"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Hey, I am Harshith I\'m a student of MBU Tirupati, and I want to get into the field of Software Development. I love writing, and my favorite thing is to create stories that bring people together. I\'ve been working on my portfolio since high school, but now it\'s time to show the world what I\'ve got.I have completed my Higher Education at Narayana School , Kadiri and 10+2 studies in IIIT, Kadapa.My Strengths :Curiosity and eagerness to learn new things. Ability to adapt and adjust to changing situations. Good time-management skills. and my weekness is Fear of Public Speaking , Taking on too much responsibility..'],
+          typeSpeed: 0.3,
+        });
+    </script>
+    
+</body>
+</html>
