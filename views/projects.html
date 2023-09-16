@@ -120,19 +120,23 @@
         @media screen and (max-width:974px) {
             #fs #box
             {
+                display: flex;
+                flex-direction: column;
                 background: white;
                 width: 0.2vw;
                 height: 70vh;
-                margin: 50px 50px;
+                margin: 50px 20px;
                 display: flex;
             }
             #fs #box #vertical1
             {
+                position: relative;
                 height: 0.2vh;
                 width: 56px;
                 background-color: white;
+                left: -170px;
             }
-            #fs #box #vertical1 img
+            #fs #box #vertical1 #img img
             {
                 width: 44px;
                 position: relative;
@@ -177,9 +181,9 @@
                 background-color: white;
                 position: relative;
                 top: 258px;
-                left: -56px;
+                left: -170px;
             }
-            #fs #box #vertical2 .image img
+            #fs #box #vertical2 #img img
             {
                 width: 44px;
                 position: relative;
@@ -332,14 +336,14 @@
             <span id="ele"></span>
             <div class="box" id="box">
                 <div class="vertical" id="vertical1">
-                    <div class="image"><img src="../imgs/web-developer-illustration-1004x1024-wcqgbag3.png" alt=""></div>
+                    <div class="image" id="img"><img src="../imgs/web-developer-illustration-1004x1024-wcqgbag3.png" alt=""></div>
                     <div id="v-desc1" class="v-desc animate__animated animate__zoomIn">Harley-davidson</div>
                     <div id="v-txt1" class="v-txt animate__animated animate__zoomIn">Site of Harley-Davidson Motor Company. Check out current Harley motorcycles, locate a dealer, & browse motorcycle parts and apparel.
                         <button onclick="window.location.href='https://harley-davidson.onrender.com'">Visit now</button>
                     </div>
                 </div>
                 <div class="vertical" id="vertical2">
-                    <div class="image" id="img2"><img src="../imgs/web-developer-illustration-1004x1024-wcqgbag3.png" alt=""></div>
+                    <div class="image" id="img"><img src="../imgs/web-developer-illustration-1004x1024-wcqgbag3.png" alt=""></div>
                     <div id="v-desc2" class="v-desc animate__animated animate__zoomIn">Text-Wrap</div>
                     <div id="v-txt2" class="v-txt animate__animated animate__zoomIn">TextUtils is a ReactJs website built primarily to do various operations on regular typed text. You can safely use WordPad or NotePad for text drafting, and saving, but TextUtils offers much more than simple text drafting.
                         <button onclick="window.location.href=''">Visit now</button>
