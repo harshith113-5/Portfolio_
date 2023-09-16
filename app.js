@@ -25,19 +25,19 @@ app.use('/views', express.static('views'));
 app.set('/views',__dirname,'views')
 
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,'../GDSC_PortFolio','views','index.html'));
+    res.sendFile(path.join(__dirname,'/views','index.html'));
 })
 app.get('/home',(req,res)=>{
-    res.sendFile(path.join(__dirname,'../GDSC_PortFolio','views','index.html'));
+    res.sendFile(path.join(__dirname,'/views','index.html'));
 })
 app.get('/about',(req,res)=>{
-    res.sendFile(path.join(__dirname,'../GDSC_PortFolio','views','about.html'));
+    res.sendFile(path.join(__dirname,'/views','about.html'));
 })
 app.get('/projects',(req,res)=>{
-    res.sendFile(path.join(__dirname,'../GDSC_PortFolio','views','projects.html'));
+    res.sendFile(path.join(__dirname,'/views','projects.html'));
 })
 app.get('/contact',(req,res)=>{
-    res.sendFile(path.join(__dirname,'../GDSC_PortFolio','views','contact.html'));
+    res.sendFile(path.join(__dirname,'/views','contact.html'));
 })
 
 app.post("/contact", (req, res) => {
